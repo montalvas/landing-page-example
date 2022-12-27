@@ -1,4 +1,4 @@
 .main-text {
     font-size: 2rem;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-text);
 }

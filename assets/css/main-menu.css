@@ -1,0 +1,47 @@
+.main-menu {
+    max-width: 1200px;
+    height: 6rem;
+    margin: 0 auto;
+    padding: 0 var(--gap);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-menu > .title {
+    font-size: 2.3rem;
+    font-family: var(--font-text);
+    cursor: pointer;
+}
+
+.main-menu > .link-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-menu .action-link {
+    font-size: 1.8rem;
+    padding: 0 2rem;
+    text-decoration: none;
+    color: #000;
+    font-family: var(--font-text);
+    cursor: pointer;
+    position: relative;
+}
+
+.main-menu .action-link::after {
+    content: '';
+    position: absolute;
+    bottom: -0.3rem;
+    left: 50%;
+    width: 0;
+    height: 0.3rem;
+    background-color: deepskyblue;
+    transition: all 300ms ease-in-out;
+}
+
+.main-menu .action-link:hover::after {
+    width: 50%;
+    left: 25%;
+}

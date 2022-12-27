@@ -6,7 +6,10 @@
     --bg-color: #0a1128;
     --text-color: #FFF;
 
-    --gap: 3rem
+    --gap: 3rem;
+
+    --font-text: 'Open Sans', sans-serif;
+    --font-title: 'Montserrat', sans-serif;
 }
 
 * {
