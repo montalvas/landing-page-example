@@ -12,14 +12,19 @@
     <link rel="stylesheet" href="/assets/css/main-text.css">
     <link rel="stylesheet" href="/assets/css/main-header.css">
     <link rel="stylesheet" href="/assets/css/main-menu.css">
+    <link rel="stylesheet" href="/assets/css/section-home.css">
+    <link rel="stylesheet" href="/assets/css/section-intro.css">
+    <link rel="stylesheet" href="/assets/css/section-top.css">
 </head>
 <body>
     <header class="main-header">
         <nav class="main-menu">
-            <h1 class="title">LOGO</h1>
+            <h1 class="title">
+                <a class="logo" href="#home">LOGO</a>
+            </h1>
             <ul class="link-list">
-                <a class="action-link" href="#">intro</a>
-                <a class="action-link" href="#">top3</a>
+                <a class="action-link" href="#intro">intro</a>
+                <a class="action-link" href="#top">top3</a>
                 <a class="action-link" href="#">gallery</a>
                 <a class="action-link" href="#">work</a>
                 <a class="action-link" href="#">contact</a>
@@ -27,17 +32,57 @@
         </nav>
     </header>
 
-    <section class="main-bg">
-        <div class="main-content">
-            <h1 class="main-title">Teste</h1>
-            <p class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consequatur provident aut libero cumque dolore velit sequi aliquid ullam commodi eaque, exercitationem temporibus quo ut doloribus blanditiis hic suscipit expedita?</p>
+    <section id="home" class="main-bg">
+        <div class="main-content -home">
+            <div class="text-content">
+                <h2 class="main-title">JANUARY BRINGS US FIREFOX 85</h2>
+                <p class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consequatur provident aut libero cumque dolore velit sequi aliquid ullam commodi eaque, exercitationem temporibus quo ut doloribus blanditiis hic suscipit expedita?</p>
+            </div>
+            <div class="image-content">
+                <img class="image" src="assets/img/html-css-js-image.svg" alt="Desenho de homem segurando logo do CSS, mulher empurrando logo do javascript e outro homem segurando o logo do html">
+            </div>
         </div>
     </section>
 
-    <section class="main-bg -white">
-        <div class="main-content">
-            <h1 class="main-title">Teste</h1>
-            <p class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consequatur provident aut libero cumque dolore velit sequi aliquid ullam commodi eaque, exercitationem temporibus quo ut doloribus blanditiis hic suscipit expedita?</p>
+    <section id="intro" class="main-bg -white">
+        <div class="main-content -intro">
+            <h2 class="main-title">INTRO</h2>
+            <p class="main-text">The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some surprises at the machine's performance. This post details some background information on the experience of porting Firefox to run natively on these CPUs.</p>
+            <p class="main-text">We'll start with some background on the Mac transition and give an overview of Firefox internals that needed to know about the new architecture, before moving on to the concept of Universal Binaries.</p>
+            <p class="main-text">We'll then explain how DRM/EME works on the new platform, talk about our experience with macOS Big Sur, and discuss various updater problems we had to deal with. We'll conclude with the release and an overview of various other improvements that are in the pipeline.</p>
+
+        </div>
+    </section>
+
+    <section id="top" class="main-bg">
+        <div class="main-content -top">
+            <section class="top-header">
+                <h2 class="main-title">TOP 3 JOBS</h2>
+                <p class="main-text">Here are some recent work.</p>
+            </section>
+
+            <section class="top-content">
+                <article class="top-box">
+                    <h3 class="main-title -second">First</h3>
+                    <p class="main-text">
+                        This button would add a box to the row of key content boxes below the intro text. This should put the box there regardless of where the user is currently writing.
+                    </p>
+                </article>
+
+                <article class="top-box">
+                    <h3 class="main-title -second">Another site</h3>
+                    <p class="main-text">
+                        I'd suggest having a popup that asks where in the row to insert the box (at the beginning or end), what title to give the box, what text to put in the box, and where the box should link to. The entire box should serve as a link to the destination page.
+                    </p>
+                </article>
+
+                <article class="top-box">
+                    <h3 class="main-title -second">Third one</h3>
+                    <p class="main-text">
+                        You can also include a type attribute containing the MIME type of the resource, so a browser can quickly see what resources are on offer, and ignore ones that it doesn’t support
+                    </p>
+                </article>
+            </section>
         </div>
     </section>
 </body>

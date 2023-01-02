@@ -1,6 +1,7 @@
 .main-content {
-    width: 1200px;
+    max-width: 120rem;
     min-height: 100vh;
     margin: 0 auto;
     padding: var(--gap);
+    padding-top: 6rem;
 }

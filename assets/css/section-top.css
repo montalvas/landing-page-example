@@ -1,0 +1,31 @@
+.main-content.-top {
+    padding: 8rem var(--gap);
+}
+
+.top-header {
+    margin-bottom: 8rem;
+    position: relative;
+}
+
+.top-header > .main-title {
+    margin-bottom: 2rem;
+}
+
+.top-header > .main-text {
+    padding-bottom: var(--gap);
+}
+
+.top-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+}
+
+.top-box > .main-title.-second::before {
+    font-size: 8rem;
+    font-style: italic;
+    transform: rotate(7deg);
+    counter-increment: grid-counter;
+    content: counter(grid-counter)
+}

@@ -14,6 +14,11 @@
     cursor: pointer;
 }
 
+.main-menu > .title .logo {
+    text-decoration: none;
+    color: black;
+}
+
 .main-menu > .link-list {
     display: flex;
     align-items: center;
@@ -37,7 +42,7 @@
     left: 50%;
     width: 0;
     height: 0.3rem;
-    background-color: deepskyblue;
+    background-color: var(--secondary-color);
     transition: all 300ms ease-in-out;
 }
 

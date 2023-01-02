@@ -1,0 +1,22 @@
+.main-content.-home {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+}
+
+.main-content.-home > .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-content.-home > .image-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content.-home .image {
+    width: 100%;
+    height: auto;
+}
