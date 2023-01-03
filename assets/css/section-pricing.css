@@ -1,0 +1,26 @@
+.responsive-table {
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+.main-table {
+    width: 100%;
+    font-size: 2rem;
+    border-collapse: collapse;
+}
+
+.main-table caption {
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.main-table th, .main-table td {
+    border: 0.1rem solid var(--light-gray-color);
+    text-align: left;
+    padding: 0.5rem 1rem;
+}
+
+.main-table th {
+    background-color: var(--light-gray-color);
+}

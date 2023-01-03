@@ -1,17 +1,17 @@
-.main-content.-top {
+.main-content.-second {
     padding: 8rem var(--gap);
 }
 
-.top-header {
+.header {
     margin-bottom: 8rem;
     position: relative;
 }
 
-.top-header > .main-title {
+.header > .main-title {
     margin-bottom: 2rem;
 }
 
-.top-header > .main-text {
+.header > .main-text {
     padding-bottom: var(--gap);
 }
 
