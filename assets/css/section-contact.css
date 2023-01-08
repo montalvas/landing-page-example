@@ -31,13 +31,13 @@
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 1.5rem 2rem;
-    font-size: 3rem;
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .form-group input::placeholder {
@@ -46,8 +46,8 @@
 }
 
 .form-button {
-    font-size: 3rem;
-    padding: 1.5rem 2rem;
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
     background-color: var(--bg-color);
     border: 5px solid #FFF;
     color: #FFF;

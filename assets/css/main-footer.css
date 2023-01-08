@@ -1,0 +1,15 @@
+.main-footer {
+    padding: 50px var(--gap);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-footer > .credential {
+    font-size: 2rem;
+    font-style: var(--font-text);
+}
+
+.main-footer .heart {
+    color: var(--heart-color);
+}
