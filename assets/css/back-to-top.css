@@ -1,0 +1,33 @@
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: var(--bg-color-light);
+    opacity: 50%;
+    transition: all 600ms ease-in-out;
+}
+
+.back-to-top::after {
+    content: '';
+    width: 1.8rem;
+    height: 1.8rem;
+    border-top: .5rem solid #FFF;
+    border-left: .5rem solid #FFF;
+    position: absolute;
+    top: 36%;
+    left: 30%;
+    transform: rotate(45deg);
+    opacity: 50%;
+    transition: all 600ms ease-in-out;
+}
+
+.back-to-top:hover {
+    opacity: 1;
+}
+
+.back-to-top::after:hover {
+    opacity: 1;
+}

@@ -4,6 +4,7 @@
 
 :root {
     --bg-color: #0a1128;
+    --bg-color-light: #131e46;
     --text-color: #FFF;
     --secondary-color: deepskyblue;
     --light-gray-color: #EEEEEE;
@@ -13,6 +14,9 @@
 
     --font-text: 'Open Sans', sans-serif;
     --font-title: 'Montserrat', sans-serif;
+
+    --font-size-mobile: 1.6rem;
+    --font-size-pc: 2rem;
 }
 
 * {

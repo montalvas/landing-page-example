@@ -6,7 +6,7 @@
 
     .main-text {
         text-align: center;
-        font-size: 1.6rem;
+        font-size: var(--font-size-mobile);
     }
 
     .main-content.-grid {
@@ -15,7 +15,7 @@
 
     .main-content.-column {
         justify-content: center;
-        padding: var(--gap);
+        padding: 0;
     }
 
     .header {
@@ -51,4 +51,127 @@
         flex-direction: column;
     }
 
+}
+
+@media (max-width: 720px) {
+    .main-header {
+        display: none;
+    }
+
+    .main-menu {
+        height: 100vh;
+        flex-direction: column;
+        gap: var(--gap);
+        justify-content: center;
+    }
+
+    .link-list {
+        flex-direction: column;
+        gap: var(--gap);
+    }
+
+    .close-menu {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+    }
+
+    .close-menu-label::after {
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        font-size: 3rem;
+        line-height: 3rem;
+        content: '☰';
+        position: fixed;
+        z-index: 2;
+        top: 1rem;
+        right: 1rem;
+        background-color: var(--bg-color);
+        color: #FFF;
+        padding: 0.25rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked ~ .main-header {
+        bottom: 0;
+        display: block;
+    }
+
+    .close-menu:checked ~ .close-menu-label::after {
+        content: '×';
+    }
+
+    .main-content.-grid,
+    .main-content.-second {
+        padding: var(--gap);
+    }
+
+    .main-footer {
+        padding: var(--gap);
+    }
+}
+
+@media (max-width: 576px) {
+    .main-bg,
+    .main-bg.-white {
+        padding: 0;
+    }
+
+    .main-content.-second {
+        padding-block: 4.5rem;
+    }
+
+    .main-content.-column {
+        padding-inline: var(--gap);
+    }
+
+}
+
+@media (max-width: 420px) {
+    .main-title {
+        font-size: 3rem;
+    }
+
+    .main-title.-second {
+        font-size: 2.4rem;
+    }
+
+    .top-box > .main-title.-second::before {
+        font-size: 5rem;
+    }
+
+    .header > .main-text {
+        padding-bottom: 0;
+    }
+
+    .main-table {
+        font-size: var(--font-size-mobile);
+    }
+
+    .form-grid {
+        font-size: var(--font-size-mobile);
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: .5rem .75rem;
+        font-size: var(--font-size-mobile);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        font-size: var(--font-size-mobile);
+    }
+
+    .form-button {
+        font-size: var(--font-size-mobile);
+        padding: .5rem .75rem;
+        border: 2.5px solid #FFF;
+    }
+
+    .main-footer > .credential {
+        font-size: 1.8rem;
+    }
 }

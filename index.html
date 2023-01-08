@@ -20,14 +20,18 @@
     <link rel="stylesheet" href="/assets/css/section-contact.css">
     <link rel="stylesheet" href="assets/css/main-footer.css">
     <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="assets/css/back-to-top.css">
 </head>
 <body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label title="close menu" class="close-menu-label" for="close-menu"></label>
+
     <header class="main-header">
         <nav class="main-menu">
-            <h1 class="title">
+            <h1 class="title" onclick="getElementById('close-menu').checked = false;">
                 <a class="logo" href="#home">LOGO</a>
             </h1>
-            <ul class="link-list">
+            <ul class="link-list" onclick="getElementById('close-menu').checked = false;">
                 <a class="action-link" href="#intro">intro</a>
                 <a class="action-link" href="#top">top3</a>
                 <a class="action-link" href="#gallery">gallery</a>
@@ -95,7 +99,7 @@
     <section id="gallery" class="main-bg -white">
         <div class="main-content -second">
             <section class="header">
-                <h2 class="main-title">TOP 3 JOBS</h2>
+                <h2 class="main-title">GALLERY</h2>
                 <p class="main-text">Here are some of my pics.</p>
             </section>
 
@@ -262,5 +266,6 @@
     <footer class="main-footer">
         <p class="credential">Feito com <span class="heart">❤</span> por Montalvas.</p>
     </footer>
+    <a href="#home" class="back-to-top"></a>
 </body>
 </html>
