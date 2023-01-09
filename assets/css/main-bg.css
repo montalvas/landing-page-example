@@ -1,6 +1,6 @@
 .main-bg {
     padding: var(--gap);
-    background-image: url('assets/img/main-bg.svg');
+    background-image: url('../img/main-bg.svg');
     background-size: cover;
     background-position: center center;
     color: var(--text-color);
